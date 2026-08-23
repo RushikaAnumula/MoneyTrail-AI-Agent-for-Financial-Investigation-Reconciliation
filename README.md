@@ -1,35 +1,45 @@
-Problem
+# MoneyTrail — AI Finance Controller
 
-Manual reconciliation across payment gateways, settlement files and internal ledgers is slow and error-prone.
+MoneyTrail is an AI-assisted finance operations system that reconciles payment transactions against settlement and ledger records, detects financial exceptions, and investigates unresolved discrepancies.
 
-What MoneyTrail does
+## Track 04 — AI Finance Controller
 
-Reconciles transactions across financial sources
-Detects settlement discrepancies
-Classifies exception types
-Investigates transaction-level discrepancies
-Provides supporting evidence
-Recommends resolution
-Reports measured accuracy and unresolved cases
-Dataset
+### Goal
 
-100 synthetic financial transactions containing:
+Close one finance-operations loop across a batch of synthetic financial transactions while reporting:
 
-Reconciled
-Settlement Shortfall
-Missing Settlement
-Refund Settlement Mismatch
-Duplicate Capture
-Settlement Overpayment
-Fee Mismatch
-Ledger Mismatch
-Unresolvable
-Evaluation
+- Reconciliation results
+- Exception classifications
+- Measured classification accuracy
+- Unresolved / unresolvable cases
+- Transaction-level investigation and recommended resolution
 
-100 transactions
+## How It Works
 
-92 correctly classified
-
-92% measured classification accuracy
-
-8 classification errors
+```text
+100 Financial Transactions
+          │
+          ▼
+   Reconciliation Engine
+          │
+     ┌────┴────┐
+     ▼         ▼
+ Reconciled  Exceptions
+                │
+                ▼
+       Investigation Engine
+                │
+        ┌───────┴────────┐
+        ▼                ▼
+   Root Cause        Resolution
+   + Evidence       Recommendation
+                │
+                ▼
+          Production API
+                │
+     ┌──────────┼──────────┐
+     ▼          ▼          ▼
+Transactions Dashboard Exceptions
+     │
+     ▼
+Transaction Detail + Investigation
