@@ -1,0 +1,11 @@
+﻿transaction_id,merchant,gateway,created_at,currency,payment_method,payment_status,gross_amount,processing_fee,tax_withheld,refund_amount,settlement_id,settlement_status,expected_net,received_net,settlement_date,ledger_amount
+TXN-10001,Northwind Logistics,Stripe,28-08-2026 06:00,INR,Mastercard,payment_captured,1000,24.5,4.9,0,SET-10001,settled,970.6,970.6,28-08-2026,970.6
+TXN-10002,Brightpath Retail,Adyen,28-08-2026 07:15,INR,Visa,payment_captured,750,18.38,3.68,0,SET-10002,settled,727.94,700,28-08-2026,727.94
+TXN-10003,Kestrel Media Group,Braintree,28-08-2026 08:30,INR,Amex,payment_captured,500,12.25,2.45,0,SET-10003,settled,485.3,485.3,28-08-2026,485.3
+TXN-10004,Helio Cloud Services,Worldpay,28-08-2026 09:45,INR,ACH,payment_captured,1200,29.4,5.88,0,,missing,1164.72,0,28-08-2026,1164.72
+TXN-10005,Atlas Foods,Stripe,28-08-2026 10:20,INR,Visa,payment_captured,900,22.05,4.41,200,SET-10005,settled,673.54,673.54,28-08-2026,673.54
+TXN-10006,Veridian Health,Adyen,28-08-2026 11:10,INR,Mastercard,payment_captured,650,15.93,3.19,0,SET-10006,settled,630.88,630.88,28-08-2026,630.88
+TXN-10007,BluePeak Travel,Braintree,28-08-2026 12:05,INR,Visa,payment_captured,450,11.03,2.21,0,SET-10007,settled,436.76,400,28-08-2026,450
+TXN-10008,Orion Manufacturing,Stripe,28-08-2026 13:40,INR,Mastercard,payment_captured,800,19.6,3.92,0,SET-10008,settled,776.48,776.48,28-08-2026,776.48
+TXN-10009,Silverline Education,Adyen,28-08-2026 14:25,INR,Visa,payment_captured,550,13.48,2.7,100,SET-10009,settled,433.82,533.82,28-08-2026,433.82
+TXN-10010,Redwood Energy,Worldpay,28-08-2026 15:50,INR,Amex,payment_captured,1500,36.75,7.35,0,SET-10010,settled,1455.9,1455.9,28-08-2026,1455.9

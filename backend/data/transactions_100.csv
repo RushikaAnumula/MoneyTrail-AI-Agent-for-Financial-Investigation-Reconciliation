@@ -1,0 +1,101 @@
+transaction_id,merchant,gateway,created_at,currency,payment_method,payment_status,gross_amount,processing_fee,tax_withheld,refund_amount,settlement_id,settlement_status,expected_net,received_net,settlement_date,ledger_amount,ground_truth
+TXN-10001,Maple Finance,Stripe,24-08-2026 08:15,INR,Visa,payment_captured,1349.09,41.17,8.23,0.0,SET-10001,settled,1299.69,1524.89,24-08-2026,1299.69,Settlement Overpayment
+TXN-10002,Brightpath Retail,Worldpay,01-08-2026 02:13,INR,Visa,payment_captured,1393.51,39.34,7.87,0.0,SET-10002,settled,1346.3,1125.81,01-08-2026,1346.3,Settlement Shortfall
+TXN-10003,Vertex Systems,Worldpay,15-08-2026 18:17,INR,Mastercard,payment_captured,4104.32,74.33,14.87,0.0,SET-10003,settled,4015.12,3942.29,15-08-2026,4015.12,Fee Mismatch
+TXN-10004,Veridian Health,Braintree,07-08-2026 10:06,INR,Mastercard,payment_captured,735.91,14.46,2.89,321.68,SET-10004,settled,718.56,458.31,07-08-2026,718.56,Refund Settlement Mismatch
+TXN-10005,Vertex Systems,Worldpay,04-08-2026 12:05,INR,ACH,payment_captured,2894.59,92.92,18.58,0.0,SET-10005,settled,2783.09,2521.81,04-08-2026,2783.09,Settlement Shortfall
+TXN-10006,Redwood Energy,Adyen,02-08-2026 21:14,INR,Visa,payment_captured,3933.42,136.68,27.34,439.92,SET-10006,settled,3769.4,3305.51,02-08-2026,3769.4,Refund Settlement Mismatch
+TXN-10007,Orion Manufacturing,Braintree,12-08-2026 11:13,INR,Mastercard,payment_captured,3449.82,103.26,20.65,0.0,SET-10007,settled,3325.91,3362.33,12-08-2026,3325.91,Settlement Overpayment
+TXN-10008,Maple Finance,Adyen,24-08-2026 07:10,INR,ACH,payment_captured,2472.62,55.85,11.17,0.0,SET-10008,settled,2405.6,2405.6,24-08-2026,2499.68,Ledger Mismatch
+TXN-10009,Helio Cloud Services,Braintree,08-08-2026 01:51,INR,Visa,payment_captured,1782.63,40.2,8.04,0.0,SET-10009,settled,1734.39,1734.39,08-08-2026,1734.39,Reconciled
+TXN-10010,Redwood Energy,Braintree,21-08-2026 15:25,INR,Mastercard,payment_captured,4458.01,128.96,25.79,0.0,SET-10010,settled,4303.26,4303.26,21-08-2026,4303.26,Reconciled
+TXN-10011,Kestrel Media Group,Adyen,18-08-2026 08:47,INR,ACH,payment_captured,3047.55,101.37,20.27,0.0,SET-10011,settled,2925.91,2925.91,18-08-2026,2925.91,Reconciled
+TXN-10012,Helio Cloud Services,Adyen,16-08-2026 02:48,INR,ACH,payment_captured,521.45,10.36,2.07,0.0,SET-10012,settled,509.02,267.24,16-08-2026,509.02,Settlement Shortfall
+TXN-10013,BluePeak Travel,Stripe,13-08-2026 19:29,INR,UPI,payment_captured,2786.84,96.17,19.23,55.17,SET-10013,settled,2671.44,2660.41,13-08-2026,2671.44,Refund Settlement Mismatch
+TXN-10014,Maple Finance,Braintree,04-08-2026 09:27,INR,Amex,payment_captured,1043.34,18.84,3.77,0.0,,missing,1020.73,0.0,04-08-2026,1020.73,Missing Settlement
+TXN-10015,Vertex Systems,Braintree,25-08-2026 05:32,INR,ACH,payment_captured,4589.35,150.53,30.11,0.0,SET-10015,settled,4408.71,4408.71,25-08-2026,4408.71,Reconciled
+TXN-10016,Maple Finance,Adyen,12-08-2026 05:34,INR,Mastercard,payment_captured,4781.45,161.05,32.21,0.0,SET-10016,settled,4588.19,4588.19,12-08-2026,4637.66,Ledger Mismatch
+TXN-10017,Orion Manufacturing,Stripe,12-08-2026 09:15,INR,Visa,payment_captured,572.25,18.84,3.77,0.0,SET-10017,settled,549.64,1099.28,12-08-2026,549.64,Duplicate Capture
+TXN-10018,Brightpath Retail,Worldpay,25-08-2026 17:49,INR,Visa,payment_captured,891.07,26.03,5.21,0.0,SET-10018,settled,859.83,1719.66,25-08-2026,859.83,Duplicate Capture
+TXN-10019,Kestrel Media Group,Braintree,28-08-2026 19:27,INR,ACH,payment_captured,4832.51,163.3,32.66,0.0,,missing,4636.55,0.0,28-08-2026,4636.55,Missing Settlement
+TXN-10020,Vertex Systems,Adyen,13-08-2026 21:41,INR,Amex,payment_captured,2055.08,68.42,13.68,0.0,SET-10020,settled,1972.98,1972.98,13-08-2026,1972.98,Reconciled
+TXN-10021,Helio Cloud Services,Adyen,11-08-2026 00:37,INR,Visa,payment_captured,2903.43,81.31,16.26,0.0,SET-10021,settled,2805.86,2805.86,11-08-2026,2805.86,Reconciled
+TXN-10022,Vertex Systems,Stripe,03-08-2026 01:55,INR,Mastercard,payment_captured,1853.01,49.55,9.91,0.0,SET-10022,settled,1793.55,1793.55,03-08-2026,1793.55,Reconciled
+TXN-10023,Orion Manufacturing,Adyen,05-08-2026 23:59,INR,ACH,payment_captured,4447.2,123.61,24.72,0.0,SET-10023,settled,4298.87,4298.87,05-08-2026,4298.87,Reconciled
+TXN-10024,Orion Manufacturing,Worldpay,04-08-2026 03:42,INR,Mastercard,payment_captured,2325.94,58.62,11.72,0.0,SET-10024,settled,2255.6,2255.6,04-08-2026,2255.6,Reconciled
+TXN-10025,Vertex Systems,Stripe,02-08-2026 12:46,INR,Visa,payment_captured,1894.72,61.86,12.37,0.0,SET-10025,settled,1820.49,1820.49,02-08-2026,1820.49,Reconciled
+TXN-10026,Helio Cloud Services,Worldpay,14-08-2026 05:17,INR,Mastercard,payment_captured,2474.35,81.32,16.26,0.0,SET-10026,settled,2376.77,2376.77,14-08-2026,2376.77,Reconciled
+TXN-10027,Silverline Education,Stripe,21-08-2026 17:53,INR,Visa,payment_captured,369.36,7.23,1.45,0.0,,missing,360.68,0.0,21-08-2026,360.68,Missing Settlement
+TXN-10028,Helio Cloud Services,Adyen,16-08-2026 15:13,INR,UPI,payment_captured,4363.86,145.5,29.1,0.0,SET-10028,settled,4189.26,4189.26,16-08-2026,4189.26,Reconciled
+TXN-10029,Northwind Logistics,Worldpay,26-08-2026 14:18,INR,Amex,payment_captured,2288.14,78.42,15.68,0.0,SET-10029,settled,2194.04,2227.5,26-08-2026,2325.08,Unresolvable
+TXN-10030,Kestrel Media Group,Adyen,07-08-2026 01:37,INR,Amex,payment_captured,3757.96,71.54,14.31,0.0,SET-10030,settled,3672.11,3672.11,07-08-2026,3672.11,Reconciled
+TXN-10031,Northwind Logistics,Worldpay,28-08-2026 16:10,INR,ACH,payment_captured,567.33,15.11,3.02,80.83,SET-10031,settled,549.2,381.96,28-08-2026,549.2,Refund Settlement Mismatch
+TXN-10032,Helio Cloud Services,Worldpay,19-08-2026 07:37,INR,Visa,payment_captured,3094.24,88.28,17.66,0.0,SET-10032,settled,2988.3,2988.3,19-08-2026,2988.3,Reconciled
+TXN-10033,Redwood Energy,Braintree,07-08-2026 21:45,INR,Amex,payment_captured,1776.66,40.0,8.0,0.0,SET-10033,settled,1728.66,1728.66,07-08-2026,1728.66,Reconciled
+TXN-10034,Maple Finance,Braintree,11-08-2026 02:00,INR,UPI,payment_captured,2453.94,85.82,17.16,0.0,SET-10034,settled,2350.96,2094.92,11-08-2026,2178.85,Unresolvable
+TXN-10035,Atlas Foods,Adyen,03-08-2026 07:23,INR,Amex,payment_captured,1639.44,41.72,8.34,0.0,SET-10035,settled,1589.38,1589.38,03-08-2026,1589.38,Reconciled
+TXN-10036,Atlas Foods,Stripe,10-08-2026 21:06,INR,ACH,payment_captured,4712.97,95.59,19.12,0.0,SET-10036,settled,4598.26,4598.26,10-08-2026,4598.26,Reconciled
+TXN-10037,Brightpath Retail,Adyen,10-08-2026 19:13,INR,Amex,payment_captured,3672.78,78.82,15.76,0.0,SET-10037,settled,3578.2,3484.28,10-08-2026,3578.2,Settlement Shortfall
+TXN-10038,Orion Manufacturing,Braintree,03-08-2026 20:27,INR,Visa,payment_captured,4197.94,78.71,15.74,0.0,SET-10038,settled,4103.49,4103.49,03-08-2026,4103.49,Reconciled
+TXN-10039,Kestrel Media Group,Braintree,24-08-2026 14:35,INR,Mastercard,payment_captured,3616.64,99.59,19.92,0.0,SET-10039,settled,3497.13,3497.13,24-08-2026,3497.13,Reconciled
+TXN-10040,Vertex Systems,Adyen,02-08-2026 11:37,INR,ACH,payment_captured,2896.87,73.31,14.66,0.0,SET-10040,settled,2808.9,2808.9,02-08-2026,2808.9,Reconciled
+TXN-10041,Veridian Health,Stripe,07-08-2026 21:15,INR,Amex,payment_captured,3434.59,82.47,16.49,0.0,SET-10041,settled,3335.63,3070.71,07-08-2026,3335.63,Settlement Shortfall
+TXN-10042,Redwood Energy,Adyen,28-08-2026 05:51,INR,Mastercard,payment_captured,4110.63,135.59,27.12,0.0,SET-10042,settled,3947.92,3947.92,28-08-2026,3947.92,Reconciled
+TXN-10043,Vertex Systems,Braintree,26-08-2026 21:55,INR,UPI,payment_captured,3754.77,83.43,16.69,0.0,SET-10043,settled,3654.65,3654.65,26-08-2026,3654.65,Reconciled
+TXN-10044,Vertex Systems,Stripe,28-08-2026 01:54,INR,UPI,payment_captured,2512.24,53.74,10.75,0.0,SET-10044,settled,2447.75,2447.75,28-08-2026,2372.58,Ledger Mismatch
+TXN-10045,Helio Cloud Services,Adyen,22-08-2026 06:25,INR,Visa,payment_captured,1842.83,60.25,12.05,0.0,SET-10045,settled,1770.53,3541.06,22-08-2026,1770.53,Duplicate Capture
+TXN-10046,Atlas Foods,Braintree,13-08-2026 21:53,INR,ACH,payment_captured,2820.21,95.79,19.16,0.0,SET-10046,settled,2705.26,2705.26,13-08-2026,2705.26,Reconciled
+TXN-10047,Atlas Foods,Adyen,09-08-2026 01:06,INR,ACH,payment_captured,3103.88,74.11,14.82,0.0,SET-10047,settled,3014.95,2965.67,09-08-2026,3014.95,Fee Mismatch
+TXN-10048,Silverline Education,Stripe,19-08-2026 06:16,INR,UPI,payment_captured,508.62,12.93,2.59,0.0,SET-10048,settled,493.1,493.1,19-08-2026,493.1,Reconciled
+TXN-10049,Silverline Education,Adyen,14-08-2026 02:42,INR,Amex,payment_captured,4627.62,132.32,26.46,0.0,SET-10049,settled,4468.84,4517.5,14-08-2026,4468.84,Settlement Overpayment
+TXN-10050,Atlas Foods,Braintree,11-08-2026 12:44,INR,UPI,payment_captured,1689.58,34.07,6.81,0.0,SET-10050,settled,1648.7,1648.7,11-08-2026,1648.7,Reconciled
+TXN-10051,BluePeak Travel,Adyen,19-08-2026 09:25,INR,ACH,payment_captured,2875.3,51.78,10.36,0.0,SET-10051,settled,2813.16,2813.16,19-08-2026,2813.16,Reconciled
+TXN-10052,BluePeak Travel,Braintree,15-08-2026 14:43,INR,UPI,payment_captured,1304.4,33.97,6.79,0.0,SET-10052,settled,1263.64,1263.64,15-08-2026,1411.65,Ledger Mismatch
+TXN-10053,Kestrel Media Group,Stripe,17-08-2026 21:40,INR,Amex,payment_captured,3210.53,62.89,12.58,0.0,SET-10053,settled,3135.06,6270.12,17-08-2026,3135.06,Duplicate Capture
+TXN-10054,Helio Cloud Services,Braintree,26-08-2026 06:09,INR,Mastercard,payment_captured,414.8,9.19,1.84,0.0,SET-10054,settled,403.77,403.77,26-08-2026,403.77,Reconciled
+TXN-10055,Brightpath Retail,Worldpay,21-08-2026 18:12,INR,UPI,payment_captured,3676.23,90.17,18.03,0.0,SET-10055,settled,3568.03,3568.03,21-08-2026,3568.03,Reconciled
+TXN-10056,Kestrel Media Group,Stripe,25-08-2026 13:14,INR,Visa,payment_captured,1126.67,38.63,7.73,0.0,SET-10056,settled,1080.31,1080.31,25-08-2026,1080.31,Reconciled
+TXN-10057,Northwind Logistics,Adyen,15-08-2026 04:51,INR,Visa,payment_captured,2483.82,67.14,13.43,0.0,SET-10057,settled,2403.25,2294.41,15-08-2026,2403.25,Settlement Shortfall
+TXN-10058,Orion Manufacturing,Worldpay,15-08-2026 05:47,INR,ACH,payment_captured,4349.03,111.56,22.31,0.0,,missing,4215.16,0.0,15-08-2026,4215.16,Missing Settlement
+TXN-10059,Maple Finance,Braintree,16-08-2026 20:15,INR,ACH,payment_captured,1590.61,30.73,6.15,0.0,SET-10059,settled,1553.73,1553.73,16-08-2026,1553.73,Reconciled
+TXN-10060,Atlas Foods,Braintree,18-08-2026 02:08,INR,Amex,payment_captured,1008.9,24.73,4.95,0.0,SET-10060,settled,979.22,979.22,18-08-2026,979.22,Reconciled
+TXN-10061,Helio Cloud Services,Stripe,14-08-2026 10:34,INR,UPI,payment_captured,2489.84,47.45,9.49,0.0,SET-10061,settled,2432.9,2387.85,14-08-2026,2432.9,Fee Mismatch
+TXN-10062,Redwood Energy,Stripe,13-08-2026 15:00,INR,ACH,payment_captured,4730.89,109.17,21.83,0.0,SET-10062,settled,4599.89,4599.89,13-08-2026,4599.89,Reconciled
+TXN-10063,BluePeak Travel,Adyen,08-08-2026 08:27,INR,UPI,payment_captured,2582.52,63.56,12.71,0.0,SET-10063,settled,2506.25,2709.82,08-08-2026,2506.25,Settlement Overpayment
+TXN-10064,Vertex Systems,Adyen,05-08-2026 19:34,INR,UPI,payment_captured,426.74,10.54,2.11,0.0,SET-10064,settled,414.09,386.5,05-08-2026,414.09,Settlement Shortfall
+TXN-10065,Maple Finance,Worldpay,28-08-2026 14:11,INR,Mastercard,payment_captured,536.34,13.11,2.62,0.0,SET-10065,settled,520.61,520.61,28-08-2026,520.61,Reconciled
+TXN-10066,Veridian Health,Braintree,09-08-2026 13:16,INR,UPI,payment_captured,4224.08,109.81,21.96,0.0,,missing,4092.31,0.0,09-08-2026,4092.31,Missing Settlement
+TXN-10067,Northwind Logistics,Braintree,21-08-2026 02:49,INR,Mastercard,payment_captured,4799.24,89.67,17.93,0.0,SET-10067,settled,4691.64,4691.64,21-08-2026,4691.64,Reconciled
+TXN-10068,Helio Cloud Services,Adyen,20-08-2026 04:15,INR,Visa,payment_captured,893.24,26.24,5.25,0.0,SET-10068,settled,861.75,780.72,20-08-2026,861.75,Settlement Shortfall
+TXN-10069,Vertex Systems,Braintree,06-08-2026 19:38,INR,Amex,payment_captured,4829.55,145.91,29.18,0.0,,missing,4654.46,0.0,06-08-2026,4654.46,Missing Settlement
+TXN-10070,Kestrel Media Group,Braintree,19-08-2026 00:59,INR,Visa,payment_captured,1766.2,52.13,10.43,0.0,SET-10070,settled,1703.64,3407.28,19-08-2026,1703.64,Duplicate Capture
+TXN-10071,BluePeak Travel,Adyen,19-08-2026 22:53,INR,Visa,payment_captured,3248.04,64.09,12.82,0.0,,missing,3171.13,0.0,19-08-2026,3171.13,Missing Settlement
+TXN-10072,Maple Finance,Stripe,26-08-2026 01:22,INR,ACH,payment_captured,2803.9,82.0,16.4,0.0,SET-10072,settled,2705.5,2705.5,26-08-2026,2705.5,Reconciled
+TXN-10073,Maple Finance,Braintree,28-08-2026 13:52,INR,Visa,payment_captured,2603.95,66.06,13.21,0.0,SET-10073,settled,2524.68,2524.68,28-08-2026,2524.68,Reconciled
+TXN-10074,Orion Manufacturing,Adyen,06-08-2026 23:33,INR,UPI,payment_captured,4837.73,109.29,21.86,0.0,SET-10074,settled,4706.58,4648.14,06-08-2026,4706.58,Fee Mismatch
+TXN-10075,Orion Manufacturing,Worldpay,27-08-2026 23:37,INR,UPI,payment_captured,1561.46,50.71,10.14,0.0,SET-10075,settled,1500.61,1482.81,27-08-2026,1500.61,Fee Mismatch
+TXN-10076,Orion Manufacturing,Adyen,19-08-2026 19:42,INR,UPI,payment_captured,2081.25,38.48,7.7,131.83,SET-10076,settled,2035.07,1845.66,19-08-2026,2035.07,Refund Settlement Mismatch
+TXN-10077,Atlas Foods,Braintree,20-08-2026 22:56,INR,Amex,payment_captured,1598.46,29.05,5.81,0.0,SET-10077,settled,1563.6,3127.2,20-08-2026,1563.6,Duplicate Capture
+TXN-10078,Brightpath Retail,Adyen,16-08-2026 17:48,INR,UPI,payment_captured,1429.52,37.3,7.46,0.0,SET-10078,settled,1384.76,1507.84,16-08-2026,1384.76,Settlement Overpayment
+TXN-10079,Northwind Logistics,Stripe,08-08-2026 12:44,INR,Amex,payment_captured,1443.53,42.28,8.46,0.0,SET-10079,settled,1392.79,1392.79,08-08-2026,1392.79,Reconciled
+TXN-10080,Silverline Education,Braintree,24-08-2026 17:21,INR,UPI,payment_captured,1953.51,50.23,10.05,0.0,SET-10080,settled,1893.23,1893.23,24-08-2026,1893.23,Reconciled
+TXN-10081,Helio Cloud Services,Stripe,11-08-2026 03:47,INR,Mastercard,payment_captured,2818.56,87.25,17.45,0.0,SET-10081,settled,2713.86,2713.86,11-08-2026,2713.86,Reconciled
+TXN-10082,Helio Cloud Services,Worldpay,24-08-2026 18:48,INR,Amex,payment_captured,2765.79,63.09,12.62,0.0,SET-10082,settled,2690.08,2690.08,24-08-2026,2690.08,Reconciled
+TXN-10083,Helio Cloud Services,Braintree,12-08-2026 05:19,INR,Mastercard,payment_captured,366.5,9.92,1.98,0.0,SET-10083,settled,354.6,354.6,12-08-2026,354.6,Reconciled
+TXN-10084,Northwind Logistics,Braintree,21-08-2026 15:06,INR,Mastercard,payment_captured,4401.78,122.19,24.44,0.0,SET-10084,settled,4255.15,4255.15,21-08-2026,4255.15,Reconciled
+TXN-10085,Orion Manufacturing,Braintree,02-08-2026 08:55,INR,Mastercard,payment_captured,2545.33,81.39,16.28,0.0,SET-10085,settled,2447.66,2447.66,02-08-2026,2447.66,Reconciled
+TXN-10086,Brightpath Retail,Stripe,05-08-2026 18:19,INR,Mastercard,payment_captured,700.35,15.56,3.11,0.0,SET-10086,settled,681.68,545.15,05-08-2026,681.68,Settlement Shortfall
+TXN-10087,Redwood Energy,Adyen,13-08-2026 14:58,INR,ACH,payment_captured,2380.79,77.67,15.53,0.0,SET-10087,settled,2287.59,2170.82,13-08-2026,2360.21,Unresolvable
+TXN-10088,Redwood Energy,Stripe,21-08-2026 06:16,INR,Mastercard,payment_captured,3404.01,70.36,14.07,0.0,SET-10088,settled,3319.58,3319.58,21-08-2026,3319.58,Reconciled
+TXN-10089,Brightpath Retail,Adyen,14-08-2026 14:44,INR,Visa,payment_captured,3090.91,70.94,14.19,0.0,SET-10089,settled,3005.78,3005.78,14-08-2026,3005.78,Reconciled
+TXN-10090,Vertex Systems,Braintree,03-08-2026 21:14,INR,UPI,payment_captured,4642.38,145.74,29.15,0.0,SET-10090,settled,4467.49,4262.36,03-08-2026,4467.49,Settlement Shortfall
+TXN-10091,Helio Cloud Services,Worldpay,18-08-2026 07:41,INR,Visa,payment_captured,1000.25,22.52,4.5,0.0,SET-10091,settled,973.23,973.23,18-08-2026,973.23,Reconciled
+TXN-10092,Northwind Logistics,Adyen,20-08-2026 23:52,INR,Amex,payment_captured,2975.27,68.15,13.63,0.0,SET-10092,settled,2893.49,2893.49,20-08-2026,2893.49,Reconciled
+TXN-10093,Vertex Systems,Braintree,09-08-2026 16:34,INR,UPI,payment_captured,2620.84,50.76,10.15,0.0,SET-10093,settled,2559.93,2559.93,09-08-2026,2559.93,Reconciled
+TXN-10094,BluePeak Travel,Braintree,09-08-2026 00:05,INR,ACH,payment_captured,1375.94,40.54,8.11,314.21,SET-10094,settled,1327.29,917.23,09-08-2026,1327.29,Refund Settlement Mismatch
+TXN-10095,Maple Finance,Braintree,02-08-2026 05:30,INR,ACH,payment_captured,2739.13,69.9,13.98,0.0,SET-10095,settled,2655.25,2655.25,02-08-2026,2655.25,Reconciled
+TXN-10096,Redwood Energy,Worldpay,03-08-2026 15:22,INR,UPI,payment_captured,2219.24,52.06,10.41,0.0,SET-10096,settled,2156.77,2156.77,03-08-2026,2156.77,Reconciled
+TXN-10097,Kestrel Media Group,Braintree,23-08-2026 15:18,INR,UPI,payment_captured,3414.14,84.7,16.94,0.0,,missing,3312.5,0.0,23-08-2026,3312.5,Missing Settlement
+TXN-10098,Northwind Logistics,Worldpay,11-08-2026 08:20,INR,Visa,payment_captured,844.83,26.3,5.26,421.22,SET-10098,settled,813.27,292.28,11-08-2026,813.27,Refund Settlement Mismatch
+TXN-10099,Silverline Education,Worldpay,02-08-2026 06:33,INR,UPI,payment_captured,2000.36,61.73,12.35,0.0,SET-10099,settled,1926.28,1693.48,02-08-2026,1926.28,Settlement Shortfall
+TXN-10100,Helio Cloud Services,Braintree,05-08-2026 09:28,INR,ACH,payment_captured,4439.98,116.51,23.3,0.0,SET-10100,settled,4300.17,4300.17,05-08-2026,4300.17,Reconciled
