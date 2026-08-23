@@ -1,62 +1,61 @@
-# MoneyTrail — AI Finance Controller
+# MoneyTrail - AI Finance Controller
 
-MoneyTrail is an AI-assisted finance operations system that reconciles payment transactions against settlement and ledger records, detects financial exceptions, and investigates unresolved discrepancies.
+MoneyTrail is a finance reconciliation system that helps identify differences between payment transactions, settlement records, and ledger records.
 
-The system processes a batch of **100 synthetic financial transactions** and provides transaction-level reconciliation, exception classification, investigation evidence, and recommended resolutions.
+It works with a dataset of 100 synthetic financial transactions. For each transaction, the system checks whether the amounts match, identifies exceptions when they do not, and provides an investigation result with supporting financial information and a suggested resolution.
 
-## 🚀 Key Features
+## Features
 
-- **Transaction Reconciliation** — Compares transaction, settlement, and ledger values.
-- **Exception Detection** — Identifies settlement shortfalls, overpayments, missing settlements, fee mismatches, refund mismatches, duplicate captures, and ledger mismatches.
-- **AI Investigation** — Analyzes financial evidence and produces root-cause explanations with confidence levels.
-- **Resolution Recommendations** — Suggests practical next steps for unresolved discrepancies.
-- **Finance Dashboard** — Provides reconciliation statistics, exception counts, and amount-at-risk.
-- **Transaction-Level Investigation** — Each transaction can be investigated independently using its actual financial data.
-- **Production API** — Frontend consumes the deployed backend rather than maintaining a separate mock dataset.
+- Reconciles payment, settlement, and ledger records
+- Detects different types of financial exceptions
+- Investigates individual transactions
+- Shows the financial values used to identify an exception
+- Provides a confidence level and suggested resolution
+- Dashboard for reconciliation and exception overview
+- Transaction ledger with 100 records
+- Exception management page
+- Production backend API
 
----
-
-## 🧠 How It Works
+## How It Works
 
 ```text
-                          100 Financial Transactions
-                       │
-                       ▼
-              Reconciliation Engine
-                       │
-                ┌──────┴──────┐
-                ▼             ▼
-            Reconciled     Exceptions
-                                │
-                                ▼
-                     Investigation Engine
-                                │
-                    ┌───────────┴───────────┐
-                    ▼                       ▼
-                Root Cause             Resolution
-                 + Evidence            Recommendation
-                               
-                       │
-                       ▼
-                  Production API
-                       │
-          ┌────────────┼────────────┐
-          ▼            ▼            ▼
-    Transactions   Dashboard    Exceptions
-          │
-          ▼
- Transaction Detail
- + AI Investigation
-📊 Evaluation Results
+100 Transactions
+       |
+       v
+Reconciliation Engine
+       |
+   +---+---+
+   |       |
+   v       v
+Matched  Exceptions
+             |
+             v
+     Investigation Engine
+             |
+      +------+------+
+      |             |
+      v             v
+   Evidence      Resolution
+      |             |
+      +------+------+
+             |
+             v
+        Application
 
-MoneyTrail was evaluated against all 100 synthetic financial transactions using an offline evaluation script.
+The reconciliation engine first compares the transaction, settlement, and ledger values.
+
+If a transaction does not match, it is classified into an exception category. The investigation engine then uses the financial information available for that transaction to explain the difference.
+
+Evaluation
+
+The reconciliation engine was tested against all 100 transactions using the offline evaluation script.
 
 Metric	Result
-Total Records	100
-Correct Classifications	92
-Incorrect Classifications	8
-Measured Accuracy	92.00%
-Ground-Truth Distribution
+Total records	100
+Correct classifications	92
+Incorrect classifications	8
+Accuracy	92%
+Dataset Distribution
 Category	Records
 Reconciled	51
 Settlement Shortfall	11
@@ -69,11 +68,9 @@ Ledger Mismatch	4
 Unresolvable	3
 Total	100
 
-The evaluation intentionally reports classification failures instead of hiding them.
+The evaluation reports the incorrect classifications as well instead of hiding them.
 
-Classification Errors
-
-The 8 incorrect classifications were:
+The 8 incorrect classifications are:
 
 Transaction	Actual	Predicted
 TXN-10007	Settlement Overpayment	Fee Mismatch
@@ -84,11 +81,25 @@ TXN-10049	Settlement Overpayment	Fee Mismatch
 TXN-10064	Settlement Shortfall	Fee Mismatch
 TXN-10068	Settlement Shortfall	Fee Mismatch
 TXN-10087	Unresolvable	Settlement Shortfall
-🔍 AI Investigation
+Exception Types
 
-For an individual transaction, MoneyTrail correlates:
+The system currently handles:
 
-Gross transaction amount
+Settlement Shortfall
+Settlement Overpayment
+Missing Settlement
+Refund Settlement Mismatch
+Duplicate Capture
+Fee Mismatch
+Ledger Mismatch
+Unresolvable
+Transaction Investigation
+
+Each transaction can be investigated separately.
+
+The investigation uses values such as:
+
+Gross amount
 Processing fee
 Tax withheld
 Refund amount
@@ -98,14 +109,9 @@ Ledger amount
 Settlement variance
 Ledger variance
 
-The investigation engine produces:
+The result includes the detected issue, confidence level, supporting values, and a suggested resolution.
 
-Root-cause classification
-Confidence level
-Supporting financial evidence
-Recommended resolution
-
-Example investigation:
+For example:
 
 Settlement Shortfall
 Confidence: 94%
@@ -117,35 +123,43 @@ Variance:      ₹220.49
 Recommendation:
 Review the gateway settlement file and verify
 additional fees, adjustments or deductions.
-🏗️ Architecture
+Application
+
+The application currently has the following main sections:
+
+Dashboard
+Transactions
+Transaction Details
+Exceptions
+AI Investigation
+
+The frontend uses the production backend API instead of keeping a separate set of mock transaction data.
+
+Tech Stack
+
+Frontend
+
+React
+
 Backend
+
 Node.js
 Express.js
-REST API
-Reconciliation Engine
-Rule-based financial reconciliation
-Multi-category exception classification
-Settlement and ledger variance analysis
-Investigation Engine
-Transaction-level evidence analysis
-Root-cause classification
-Confidence scoring
-Resolution recommendations
-Frontend
-Dashboard
-Transaction Ledger
-Transaction Detail
-Exception Management
-AI Investigation Interface
-🛠️ Tech Stack
-Layer	Technology
-Frontend	React
-Backend	Node.js, Express.js
-Data	CSV / Synthetic Financial Dataset
-API	REST
-Deployment	Render
-Version Control	Git, GitHub
-📁 Project Structure
+
+Data
+
+CSV
+Synthetic financial transaction dataset
+
+Deployment
+
+Render
+
+Tools
+
+Git
+GitHub
+Project Structure
 MoneyTrail/
 │
 ├── backend/
@@ -168,61 +182,39 @@ MoneyTrail/
 │   └── transactions_100.csv
 │
 └── README.md
-🌐 Production API
+Production Backend
 
-The backend is deployed as a production web service:
-
-MoneyTrail API
+The backend is deployed on Render:
 
 https://moneytrail-ai-agent-for-financial.onrender.com
 
-The application frontend consumes the production API so that transaction data and reconciliation results are generated from the same backend dataset.
+The production API provides the transaction data and reconciliation/investigation results used by the application.
 
-Note: The free Render instance may take some time to wake up after inactivity.
+Since it is running on a free Render instance, the first request after a period of inactivity may take some time.
 
-▶️ Run Locally
-1. Clone the repository
+Running Locally
+
+Clone the repository:
+
 git clone https://github.com/RushikaAnumula/MoneyTrail-AI-Agent-for-Financial-Investigation-Reconciliation.git
-
 cd MoneyTrail
-2. Install dependencies
+
+Install the backend dependencies:
+
 cd backend
 npm install
-3. Start the backend
+
+Start the backend:
+
 node server.js
 
-The API will run locally on the configured port.
+To run the evaluation:
 
-4. Run evaluation
-
-From the project root:
-
+cd ..
 python scripts/evaluate.py
 
-The evaluation script reports classification accuracy across all 100 transactions.
+The evaluation script tests all 100 transactions and reports the classification accuracy.
 
-🎯 Exception Types
+Current Result
 
-MoneyTrail currently identifies:
-
-Settlement Shortfall
-Settlement Overpayment
-Missing Settlement
-Refund Settlement Mismatch
-Duplicate Capture
-Fee Mismatch
-Ledger Mismatch
-Unresolvable
-💡 Key Design Principle
-
-MoneyTrail evaluates the complete transaction batch rather than cherry-picking successful examples.
-
-The same transaction data and reconciliation logic drive the production application, while the offline evaluation uses ground-truth labels to measure classification performance.
-
-This makes the system's performance measurable and transparent.
-
-📌 Current Result
-
-92.00% measured classification accuracy across 100 synthetic financial transactions.
-
-The remaining classification errors are explicitly reported for further improvement rather than being hidden.
+MoneyTrail currently achieves 92% classification accuracy on 100 synthetic financial transactions.
