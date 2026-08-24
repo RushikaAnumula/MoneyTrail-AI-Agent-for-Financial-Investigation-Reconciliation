@@ -1,4 +1,4 @@
-# MoneyTrail - AI Finance Controller
+# MMoneyTrail-AI Agent for Financial Investigation Reconciliation
 
 MoneyTrail is a finance reconciliation system that compares payment, settlement, and ledger records to identify financial discrepancies.
 
